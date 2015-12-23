@@ -1,0 +1,56 @@
+ru:
+  attributes:
+    created_at: Создано
+    updated_at: Обновлено
+  activerecord:
+    models:
+      breed:
+        one: Порода
+        other: Породы
+        few: Пород
+        many: Пород
+      cat:
+        one: Кошачье существо
+        other: Кошки
+        few: Кошек
+        many: Кошек
+    attributes:
+      breed:
+        name: Название
+      cat:
+        name: Имя
+        breed: Порода
+        breed_id: Порода
+        age: Возраст
+        birthdate: Дата рождения
+        on_sale: Продается
+        vaccinated: Вакцинирован
+        neutered: Кастрирован
+        sex: Пол
+        sexes:
+          male: Мальчик
+          female: Девочка
+        ownered_by: Как попал к владельцу
+        ownered_by_values:
+          bought: Купили
+          born: Родился
+
+    errors:
+      models:
+        cat:
+          attributes:
+            birthdate:
+              cannot_be_today: не может быть сегодня
+        exhibition:
+          attributes:
+            start_date:
+              cannot_be_more_than_end_date: не может быть больше даты окончания выставки
+    # errors:
+    #   models:
+    #     breed:
+    #       attributes:
+    #         name:
+    # # https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/ru.yml
+    #           blank: Поле не должно быть пустым
+    #           too_short: Поле не должно быть короче двух символов
+      # will translate User attribute "login" as "Handle"
